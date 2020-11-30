@@ -172,6 +172,7 @@ SFA__vector <- function(EVrho_matrix_fixed_h,Tt=Tt,q=q,region=region)
   if(region=="square"){nJ <- apply(rbind(Enew,Vnew),MARGIN=2,FUN=function(clm){max(abs(clm))})} # Maximal distances of E and V
   # Successive change point detection
   Mh <- max(nJ)
+  if (is.nan(Mh)) {stop("Invalid input data. Statistics not well-defined.")}
   while(max(nJ) > q) 
   {
     rstrct <- which(nJ>q) # restrict to points where joint process lies in rejection region...

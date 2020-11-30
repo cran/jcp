@@ -4,8 +4,7 @@
 \alias{jcp}
 \title{jcp}
 \usage{
-jcp(x, H = NA, q = NA, alpha = 0.05, sim = 1000,
-  region = "square")
+jcp(x, H = NA, q = NA, alpha = 0.05, sim = 1000, region = "square")
 }
 \arguments{
 \item{x}{numeric vector. Input sequence of random variables.}
