@@ -1,8 +1,8 @@
-e4f775de67533da9271cd8a6a430d7c9 *DESCRIPTION
+f9f3a94ebff642dd9a1b5b9b596c1706 *DESCRIPTION
 b018af5c6d472e71f16dd18df50e194f *NAMESPACE
-dbff67b471963827c371764dc4a3f80e *R/jcp.r
-020b35f7ca746e60fc2fdd7327ee52ac *R/plot.jcp.r
-23ff4c484222ad5a99105872f601e2e6 *R/summary.jcp.r
-8c2aaad7e7d212d74ba0ba80bf495e54 *man/jcp.Rd
-c31143cc952ad7ac22db6d7259bdbb9b *man/plot.jcp.Rd
-a3863edbf3f81727c373326a72bc62df *man/summary.jcp.Rd
+7c1f2a95f04d573a65871d86315d3f4d *R/jcp.r
+bf32ca8a127dbfaeeb28abb59deb61ee *R/plot.jcp.r
+0481212c249ee01feece87e4888d7c80 *R/summary.jcp.r
+a4dea8cec501a6396abba5ddf14f87dc *man/jcp.Rd
+ba70094262260ab41bd16bc11d83aed0 *man/plot.jcp.Rd
+98f7b56f9cfe15e55b2ade4dcac18cbc *man/summary.jcp.Rd

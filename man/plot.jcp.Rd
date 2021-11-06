@@ -15,6 +15,9 @@
 
 \item{...}{additional arguments}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Plot method for class 'jcp'
 }
@@ -37,7 +40,7 @@ plot(result2)
 
 }
 \references{
-Bivariate change point detection (2019+), Michael Messer
+Michael Messer (2021) Bivariate change point detection - joint detection of changes in expectation and variance, Scandinavian Journal of Statistics, DOI 10.1111/sjos.12547.
 }
 \seealso{
 \code{\link{jcp}, \link{summary.jcp}}

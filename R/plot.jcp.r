@@ -7,6 +7,8 @@
 #' @param cex.main numeric, size of titles
 #' @param ... additional arguments
 #'
+#' @return No return value, called for side effects
+#'
 #' @examples 
 #' # Normal distributed sequence with 3 change points at
 #' # c1=250 (change in expectation), 
@@ -27,7 +29,7 @@
 #' @seealso \code{\link{jcp}, \link{summary.jcp}}
 #' @author Michael Messer
 #' 
-#' @references Bivariate change point detection (2019+), Michael Messer 
+#' @references Michael Messer (2021) Bivariate change point detection - joint detection of changes in expectation and variance, Scandinavian Journal of Statistics, DOI 10.1111/sjos.12547. 
 #' 
 #' 
 #' @rdname plot.jcp
@@ -44,7 +46,10 @@ plot.jcp <- function(x,cex=1.0,cex.main=1.0,...)
 ####
 #### Layout and parameter setting
 ####
-    
+
+oldpar <- par(no.readonly = TRUE)
+on.exit(par(oldpar))  
+      
 mat <- cbind(c(1,2,2,2),c(1,3,3,3),c(1,3,3,3))
 layout(mat); par(cex=cex,cex.main=cex.main,mar=c(1.5,2,2,0.5));  
 

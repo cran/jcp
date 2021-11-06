@@ -5,6 +5,8 @@
 #' @param object object of class jcp
 #' @param ... additional arguments
 #'
+#' @return No return value, called for side effects
+#'
 #' @examples 
 #' #' # Normal distributed sequence with 3 change points at
 #' # c1=250 (change in expectation), 
@@ -25,7 +27,7 @@
 #' @seealso \code{\link{jcp}, \link{plot.jcp}}
 #' @author Michael Messer
 #' 
-#' @references Bivariate change point detection (2019+), Michael Messer 
+#' @references Michael Messer (2021) Bivariate change point detection - joint detection of changes in expectation and variance, Scandinavian Journal of Statistics, DOI 10.1111/sjos.12547.
 #' 
 #' 
 #' @rdname summary.jcp

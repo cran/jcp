@@ -9,18 +9,18 @@ jcp(x, H = NA, q = NA, alpha = 0.05, sim = 1000, region = "square")
 \arguments{
 \item{x}{numeric vector. Input sequence of random variables.}
 
-\item{H}{NA or numeric vector. Window set. If NA (dafault), then H is automatically set. If not NA, then H must an increasing vector of positive integers with maximum =< length(x)/2.}
+\item{H}{NA or numeric vector. Window set. If NA (default), then H is automatically set. If not NA, then H must an increasing vector of positive integers with maximum =< length(x)/2.}
 
 \item{q}{NA or numeric value. Rejection threshold. If NA (default), then the rejection boundary is derived in simulations (from Gaussian process limit) according to sim and alpha. If not NA, then q is considered predefined and must be set a postive real number.}
 
 \item{alpha}{numeric value. Significance level. Must be in (0,1), default = 0.05. In case of predefined q, alpha is set to NA.}
 
-\item{sim}{numereric value. Number of simulations of limit process for approximation of q. Must be positive integer, default = 1000. In case of predefined q, sim is set to NA.}
+\item{sim}{numeric value. Number of simulations of limit process for approximation of q. Must be positive integer, default = 1000. In case of predefined q, sim is set to NA.}
 
 \item{region}{character string. Defines rejection region, default = "square". Must be chosen either "square", "circle" or "ellipse".}
 }
 \value{
-invisible
+invisible list
 \item{changepoints}{detected change points (increasingly ordered)}
 \item{mean_sd}{matrix of estimated means and standard deviations}
 \item{M}{test statistic}
@@ -58,7 +58,7 @@ plot(result2)
 
 }
 \references{
-Bivariate change point detection (2019+), Michael Messer
+Michael Messer (2021) Bivariate change point detection - joint detection of changes in expectation and variance, Scandinavian Journal of Statistics, DOI 10.1111/sjos.12547.
 }
 \seealso{
 \code{\link{plot.jcp}, \link{summary.jcp}}
